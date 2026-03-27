@@ -1,70 +1,68 @@
 # Approximate 8×8 Multiplier for Energy-Efficient Image Processing
 
-##  Overview
+## Overview
 
 This project focuses on the design and implementation of **approximate multipliers** aimed at improving hardware efficiency in error-tolerant applications such as image processing and neural networks. The work is inspired by recent IEEE research on energy-efficient multiplier architectures.
 
-## Objectives
+---
+
+##  Objectives
 
 * Design efficient **8×8 approximate multipliers** using different approximation techniques
 * Reduce **power, area, and delay** while maintaining acceptable accuracy
 * Analyze trade-offs between hardware performance and computational error
 * Apply the design to **image processing tasks** and evaluate output quality
 
-## Techniques Used
+---
+
+##  Techniques Used
 
 * Partial Bit OR (PBO)-based approximation
 * Recursive architecture using **8×4 multiplier decomposition**
 * Hybrid designs using approximate compressors
 * Carry truncation and logic simplification
 
-## Tools & Technologies
+---
+
+##  Tools & Technologies
 
 * **Verilog HDL** (Design & Implementation)
 * **Xilinx Vivado** (Simulation & Synthesis)
 * **ModelSim** (Functional Verification - optional)
 * **FPGA (Planned)** for hardware validation
 
-## 📊 Evaluation Metrics
+---
+
+##  Evaluation Metrics
 
 * Area, Power Consumption, Propagation Delay
 * Power Delay Product (PDP)
 * Mean Relative Error Distance (MRED)
 * Image Quality Metrics: **PSNR, SSIM**
 
-## 🖼️ Applications
+---
+
+##  Applications
 
 * Gaussian Image Smoothing
 * Sobel Edge Detection
 * Image Sharpening
 * Deep Neural Network acceleration (planned)
 
+---
 
-## 📁 Project Structure
 
-Approximate-Multiplier/
-│
-├── src/              # Verilog design files
-├── tb/               # Testbenches
-├── constraints/      # XDC files
-├── scripts/          # TCL scripts
-├── results/          # Simulation results / images
-└── README.md
-```
+##  Current Status
+
+* [Done] Literature study and architecture understanding
+* [Done] Initial Verilog implementation started
+*  Design optimization (area, power, delay)
+*  Image processing integration
+*  FPGA implementation and validation
 
 ---
 
-## 🚧 Current Status
-
-* [x] Literature study and architecture understanding
-* [x] Initial Verilog implementation started
-* [ ] Design optimization (area, power, delay)
-* [ ] Image processing integration
-* [ ] FPGA implementation and validation
-
----
-
-## 📈 Future Work
+##  Future Work
 
 * Implement optimized architectures on FPGA
 * Compare approximate vs exact multipliers
@@ -73,14 +71,17 @@ Approximate-Multiplier/
 
 ---
 
-## 📚 Reference
+##  Reference
 
 Based on IEEE research on energy-efficient approximate multipliers for image processing and neural networks.
 
 ---
 
-## 🤝 Contributions
+##  Contributions
 
-This is an ongoing project. Contributions, suggestions, and improvements are welcome!
+This is an ongoing project. I am doing this project with my peer Abhinav Tejpaul which is from the same institution (IIT Goa).
+Irrespective of this anyone who would like to contribute is welcomed to do so.
+
+Contact: Email: ankitgkc@gmail.com
 
 ---
