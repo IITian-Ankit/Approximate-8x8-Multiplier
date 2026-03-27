@@ -1,0 +1,17 @@
+# Vivado files to ignore
+*.jou
+*.log
+*.str
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.Xil/
+*.tmp/
+*.backup/
+*.wdb
+
+# OS files
+.DS_Store
+Thumbs.db
