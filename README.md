@@ -80,7 +80,7 @@ Based on IEEE research on energy-efficient approximate multipliers for image pro
 ##  Contributions
 
 This is an ongoing project. I am doing this project with my peer Abhinav Tejpaul which is from the same institution (IIT Goa).
-Irrespective of this anyone who would like to contribute is welcomed to do so.
+Irrespective of this anyone who would like to contribute is welcome to do so.
 
 Contact: Email: ankitgkc@gmail.com
 
