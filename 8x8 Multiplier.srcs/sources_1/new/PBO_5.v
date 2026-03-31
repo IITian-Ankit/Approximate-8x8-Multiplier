@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/18/2026 01:46:53 AM
+// Create Date: 03/31/2026 11:58:13 PM
 // Design Name: 
-// Module Name: tb_8x8
+// Module Name: PBO_5
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,18 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_8x8();
-reg [7:0] A,B;
-wire [15:0] P;
+module PBO_5(
 
-PBO_3_8X8 dut1(.A(A),.B(B),.P(P));
-initial begin
-A = 8'b10111011;
-B = 8'b00000010;
-#100;
-A = 8'b00001000;
-B = 8'b00000011;
-#100;
-$finish;
-end
+    );
 endmodule
