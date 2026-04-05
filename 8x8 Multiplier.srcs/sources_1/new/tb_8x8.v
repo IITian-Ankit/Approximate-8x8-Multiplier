@@ -25,13 +25,24 @@ reg [7:0] A,B;
 wire [15:0] P;
 
 PBO_3_8X8 dut1(.A(A),.B(B),.P(P));
+
+
+integer i;
+reg [15:0] exact;
+integer error;
 initial begin
-A = 8'b10111011;
-B = 8'b00000010;
-#100;
-A = 8'b00001000;
-B = 8'b00000011;
-#100;
-$finish;
+    $display("A\tB\tApprox\tExact\tError");
+
+    // random testing
+    for(i = 0; i < 20; i = i + 1) begin
+        A = $random % 256;
+        B = $random % 256;
+        #10;
+        exact = A * B;
+        error = exact - P;
+        $display("%d\t%d\t%d\t%d\t%d", A, B, P, exact, error);
+    end
+
+    $finish;
 end
 endmodule

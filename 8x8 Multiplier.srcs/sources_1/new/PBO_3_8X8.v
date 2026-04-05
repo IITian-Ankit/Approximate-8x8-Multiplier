@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 `include "PBO_3.v"
+`include "multiplier_8x4.v"
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -28,7 +29,7 @@ assign B_L = B[3:0];
 
 wire [11:0] P1,P2;
 PBO_3 Pb1(.A(A),.B(B_L),.P(P1));
-PBO_3 Pb2(.A(A),.B(B_H),.P(P2));
+multiplier_8x4 Pb2(.A(A),.B(B_H),.P(P2));
 
 assign P = P1 + (P2<<4);
 endmodule
