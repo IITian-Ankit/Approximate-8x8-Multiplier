@@ -23,10 +23,18 @@
 module tb_8x8();
 reg [7:0] A,B;
 wire [15:0] P;
-
+/*
 PBO_3_8X8 dut1(.A(A),.B(B),.P(P));
-
-
+*/
+/*
+PBO_5_8X8 dut2(.A(A),.B(B),.P(P));
+*/
+/*
+PBO_7_8X8 dut3(.A(A),.B(B),.P(P));
+*/
+/*
+PBOM8_73Y dur4(.A(A),.B(B),.P(P));
+*/
 integer i;
 reg [15:0] exact;
 integer error;
