@@ -33,8 +33,9 @@ PBO_5_8X8 dut2(.A(A),.B(B),.P(P));
 PBO_7_8X8 dut3(.A(A),.B(B),.P(P));
 */
 /*
-PBOM8_73Y dur4(.A(A),.B(B),.P(P));
+PBOM8_73Y dut4(.A(A),.B(B),.P(P));
 */
+Hybrid_Multiplier_8x8 dut5(.A(A),.B(B),.P(P));
 integer i;
 reg [15:0] exact;
 integer error;
