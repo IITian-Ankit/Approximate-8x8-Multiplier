@@ -74,8 +74,11 @@ CDM8_a6T dut4(.A(A),.B(B),.P(P17));
 CDM8_a7T dut4(.A(A),.B(B),.P(P17));
 CDM8_a8T dut4(.A(A),.B(B),.P(P17));
 CDM8_a9T dut4(.A(A),.B(B),.P(P17));
-*/
 CDM8_aaT dut4(.A(A),.B(B),.P(P17));
+Ax8_1 dut4(.A(A),.B(B),.P(P17));
+Ax8_2 dut4(.A(A),.B(B),.P(P17));
+*/
+Ax8_3 dut4(.A(A),.B(B),.P(P17));
 // ======================================================
 
 task run_test;
@@ -95,7 +98,7 @@ task run_test;
         #10;
 
         $display(
-        "A=%3d  B=%3d  Exact=%5d   CDM8_aaT=%5d" ,
+        "A=%3d  B=%3d  Exact=%5d   Ax8_3=%5d" ,
         A, B, exact, P17
         );
 
