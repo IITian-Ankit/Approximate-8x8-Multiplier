@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 07/06/2026 11:53:23 PM
+// Create Date: 07/12/2026 01:12:21 AM
 // Design Name: 
-// Module Name: Ax8_1
+// Module Name: AxRM2_8x8
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Ax8_1(A,B,P);
+module AxRM2_8x8(A,B,P);
 input [7:0] A,B;
 output [15:0] P;
 
@@ -33,10 +33,10 @@ assign B_H = B[7:4];
 
 wire [7:0] pp1,pp2,pp3,pp4;
 
-MxA_4x4 M1(.A(A_L),.B(B_L),.P(pp1));
-exact_4x4 M2(.A(A_H),.B(B_L),.P(pp2));
-exact_4x4 M3(.A(A_L),.B(B_H),.P(pp3));
-exact_4x4 M4(.A(A_H),.B(B_H),.P(pp4));
+Mul2b_4x4 M1(.A(A_L),.B(B_L),.P(pp1));
+Mul2b_4x4 M2(.A(A_H),.B(B_L),.P(pp2));
+exact_4x4_using_2x2 M3(.A(A_L),.B(B_H),.P(pp3));
+exact_4x4_using_2x2 M4(.A(A_H),.B(B_H),.P(pp4));
 
 assign P[3:0] = pp1[3:0];
 
