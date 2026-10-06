@@ -48,7 +48,7 @@ module Error_tb;
         .P(exact_out)
     );
 
-    AM8EC_1 uut_approx (
+    Final_Design_A6_c_2d uut_approx (
         .A(A),
         .B(B),
         .P(approx_out)

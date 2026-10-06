@@ -22,7 +22,7 @@
 
 module Approx_Compressor_A1(input X1,X2,X3,X4, output S,C);
 
-assign S = (X1 ^ X2) ^ (X3 ^ X4);
-assign C = (X1&X3)+(X1&X2)+(X2&X3)+(X2&X4);
+assign S = (X1 ^ X2) ^ (X3 | X4);
+assign C = (X1&X3)+(X1&X2)+(X2&X3)+(X2&X4)+(X1&X4);
 
 endmodule
