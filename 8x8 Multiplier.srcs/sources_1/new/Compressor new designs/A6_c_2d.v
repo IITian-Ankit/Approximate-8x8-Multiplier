@@ -46,9 +46,9 @@ assign S = X^w1;
 
 wire a,b;
 assign a  = (~(X&X));
-assign b = (~(X&w3));
+assign b = (~(X&w1));
 wire c;
-assign c = (~(w1&a));
+assign c = (~(w3&a));
 assign C  = (~(b&c));
 
 endmodule

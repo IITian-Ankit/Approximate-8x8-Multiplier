@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 #  CSV columns: A, B, Exact, Approx, Abs_Error, Sq_Error, MRED_per, Incorrect
 # ==========================================================
 
-filename  = r"C:\Users\ankit\8x8 Multiplier\Signed error excel sheets\A6_c.csv"     # <-- change to the full path of your CSV
+filename  = r"C:\Users\ankit\8x8 Multiplier\Signed error excel sheets\A6_b_1d_ECB4.csv"     # <-- change to the full path of your CSV
 BIN_WIDTH = 5                 # histogram bin width (integer error units)
 SHOW_INSET = False              # zoomed inset around 0 (bin width = 1)
 
