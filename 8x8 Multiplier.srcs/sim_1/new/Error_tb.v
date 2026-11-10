@@ -48,7 +48,7 @@ module Error_tb;
         .P(exact_out)
     );
 
-    Final_Design_ECB4 uut_approx (
+    Design_Alternative_A6_b_1d uut_approx (
         .A(A),
         .B(B),
         .P(approx_out)
